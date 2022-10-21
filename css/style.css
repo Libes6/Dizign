@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:300,regular,600&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Work Sans', sans-serif;
+	background-color: #010208;
+	color: #fff;
+}
+
+
+.container {
+	max-width: 1245px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+
+.header {
+	padding: 35px 0;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	z-index: 5;
+	background-color: #010208;
+	
+}
+.header__container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+}
+.header__logo {
+}
+.header__menu {
+}
+.menu__list {
+	list-style:none;
+	display: flex;
+	align-items: center;;
+	gap: 3rem;
+}
+.menu__item {
+	text-decoration: none;
+	transition: all .2 ease-in-out;
+}
+
+.menu__link {
+	color: #e3e3e3;
+	font-size: 1.2rem;
+	text-transform:uppercase ;
+	text-decoration: none;
+	font-weight: 600;
+	position: relative;
+   	
+}
+.menu__link:hover {
+	
+	background: linear-gradient(99.05deg, #BC3CD8 0.07%, #C54B8C 106.32%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+
+}
+
+.menu__link:hover::before{
+	opacity: 1;
+	width: 2rem;
+}
+.menu__link::before{
+	content: '';
+
+	width: 1rem;
+	height: 5px;
+	background-color:#fff;
+	border-radius: 10px;
+	position: absolute;
+	left: 50%;
+	top: 120%;
+	transform:translateX(-50%) ;
+	opacity: 0;
+
+
+}
+
+.hero{
+	height: 100vh;
+	display: flex;
+	align-items: center;;
+	justify-content: center;
+position: relative;
+}
+.hero__title {
+	font-weight: 300;
+font-size: 56px;
+line-height: 150%;
+text-align: center;
+letter-spacing: -0.02em;
+color: rgba(227, 228, 230, 0.55);
+}
+.hero__title span{
+	font-weight: 600;
+	color: #E3E4E6;
+}
+.hero_arrow {
+	position: absolute;
+	color: #e3e3e3;
+	background: none;
+	border: none;
+	width: 40px;
+	height: 40px;
+	background: transparent url('../img/arrow.svg') center center no-repeat;
+	left: 50%;
+	bottom: 42px;
+	transform: translateX(-50%) rotate(90deg);
+	cursor: pointer;
+}
+.hero_arrow:hover {
+	background-color:rgba(247, 248, 240, 0.55);
+	border-radius: 50px;
+
+}
+
+
+
+.clients {
+	height: 70vh;
+padding: 80px 130px;
+
+
+
+}
+
+.clients__title {
+	max-width: 560px;
+	font-weight: 600;
+	font-size: 40px;
+	line-height: 150%;
+	color: #E3E4E6;
+
+}
+.clients__title span {
+	font-weight: 300;
+	color: rgba(227, 228, 230, 0.55);
+}
+.clinets__body {
+	margin-top: 95px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+
+.clients__item {
+	display: flex;
+	flex-direction: row;
+	
+}
+
+
+.works {
+	padding: 80px  110px;
+}
+
+.container.works__container {
+}
+
+.works__title {
+	color: rgba(227, 228, 230, 0.55);
+	font-weight: 300;
+	font-size: 40px;
+	line-height: 150%;
+
+}
+.works__title span{
+	font-weight: 600;
+	font-size: 40px;
+	color: #E3E4E6;
+
+	
+}
+.works__body {
+	margin-top: 95px;
+}
+.card{
+	display: flex;
+	gap: 32px;
+	
+	
+}
+.card:not(:last-child){
+	margin-bottom: 100px;
+}
+
+.card:nth-child(odd){
+	flex-direction: row-reverse;
+}
+.works__card.card {
+	
+}
+.card__info {
+	flex: 1 1 auto;
+	align-self: flex-end;
+}
+
+.card__img {
+	border-radius: 20px;
+	overflow: hidden;
+	flex: 0 0 50%;
+}
+.card__img img{
+	max-width: 100%;
+}
+.card__tag {
+font-weight: 600;
+font-size: 16px;
+line-height: 150%;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+color: #E3E4E6;
+margin-bottom: 15px;
+}
+.card__text {
+	margin-bottom: 24px;
+	font-weight: 300;
+font-size: 32px;
+line-height: 150%;
+color: rgba(227, 228, 230, 0.55);
+}
+.card__text span{
+font-weight: 600;
+font-size: 32px;
+line-height: 150%;
+color: #E3E4E6;
+}
+.card__category {
+	margin-bottom: 40px;
+font-weight: 300;
+font-size: 18px;
+line-height: 150%;
+color: #E3E4E6;
+}
+.card__btn {
+	margin-top: 32px;
+	border: none;
+	border: 1px solid rgba(227, 228, 230, 0.55);
+border-radius: 100px;
+padding: 8px 16px;
+background: none;
+color: #E3E4E6;
+cursor: pointer;;
+align-items: center;;
+text-align: center;;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+gap: 8px;
+
+}
+.card__btn::after{
+
+	content: url('/img/arrow.svg');
+
+}
+
+.card__btn:hover{
+	background: linear-gradient(99.05deg, #BC3CD8 0.07%, #C54B8C 106.32%);
+border: 1px solid #E3E4E6;
+border-radius: 100px;
+}
+.card__btn:hover::after{
+	content: url('/img/arrow-hover.svg');
+}
