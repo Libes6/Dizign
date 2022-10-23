@@ -69,6 +69,7 @@ body {
 	width: 30px;
 	height: 18px;
 	position: relative;
+	margin-right: 20px;
 	z-index: 5;
 	cursor: pointer;
 	display: none;
