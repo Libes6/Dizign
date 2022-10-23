@@ -19,6 +19,10 @@ body {
 	padding: 0 15px;
 }
 
+.header__logo> img{
+	max-width: 120%;
+}
+
 
 .header {
 	padding: 35px 0;
@@ -418,7 +422,7 @@ padding: 80px 0 40px ;
 	line-height: 150%;
 	text-align: center;
 	color: #E3E4E6;
-	margin-bottom: 3rem;
+	margin-bottom: 2rem;
 }
 
 .footer__social {
@@ -469,15 +473,57 @@ padding: 80px 0 40px ;
 	.menu__link{
 		font-size: 30px;
 	}
+
+	.container {
+		max-width: 1400px;
+		margin: 0 auto;
+		padding: 0 25px;
+	}
+
+	.clients {
+		padding: 45px 50px;
+		overflow:inherit;
+	}
+	.works {
+		padding: 75px 50px;
+		margin-top: 80px;
+	}
+
 	.clients li{
 		padding: 0 30px;
 	}
   .clients__title{
 	font-size: 30px;
   }
+
+  .header__logo> img{
+	max-width: 75%;
+}
+
+.works__title, .works__title span{
+	font-size: 30px;
+
+}
+.card {
+	flex-direction: column;;
+}
+.card:nth-child(odd){
+	flex-direction: column;
+}
+
+.card__text, .card__text span {
+	font-size: 20px;
+}
+
+
+
 }
 @media (max-width: 375px) {
 	.hero__title{
 		font-size: 25px;
 	}
 }
+
+
+
+
